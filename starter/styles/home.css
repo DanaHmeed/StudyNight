@@ -1,0 +1,60 @@
+/* Home Container Styling */
+.homeContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  text-align: center;
+}
+
+.homeContainer img {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 20px;
+  height: auto;
+  filter: brightness(70%);
+}
+
+.homeContainer h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.homeContainer h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+/* Tablet (≤768px) */
+@media (max-width: 768px) {
+  .homeContainer h1 {
+    font-size: 2.5rem;
+  }
+
+  .homeContainer h2 {
+    font-size: 1.3rem;
+  }
+
+  .homeContainer img {
+    max-width: 500px;
+    margin-top: 15px;
+  }
+}
+
+/* Mobile (≤480px) */
+@media (max-width: 480px) {
+  .homeContainer h1 {
+    font-size: 2rem;
+  }
+
+  .homeContainer h2 {
+    font-size: 1.2rem;
+  }
+
+  .homeContainer img {
+    margin-top: 10px;
+  }
+}
