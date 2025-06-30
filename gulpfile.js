@@ -2,9 +2,10 @@ import gulp from "gulp";
 import shell from "gulp-shell";
 
 gulp.task("copy-images", () => {
-  return gulp.src("images/**/*")
+  return gulp.src("starter/images/**/*")
     .pipe(gulp.dest("dist/images"));
 });
+
 
 const runParcel = shell.task(["npx parcel starter/index.html"]);
 gulp.task("default", gulp.series("copy-images", runParcel));
